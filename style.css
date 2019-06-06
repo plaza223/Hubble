@@ -1,0 +1,337 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  html, body {
+      overflow-x: hidden;
+  }
+
+  nav {
+      width: 95vw;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  nav img {
+      width: 150px;
+  }
+
+  nav a {
+      text-decoration: none;
+      border: 1px solid hsl(322, 100%, 66%);
+      border-radius: 25px;
+      padding: 0.3em 1.75em;
+      color: hsl(322, 100%, 66%);
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  header {
+      width: 90vw;
+      height: 90vh;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  header > * {
+      margin-bottom: 1.7em;
+  }  
+
+  header h1 {
+      font-family: 'Poppins', sans-serif;
+  }
+
+  header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+  }
+
+  header a, #get-started a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 1em 1.75em;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+  }
+
+  section {
+      width: 100vw;
+      font-family: 'Open Sans', sans-serif;
+      margin: 6em 0;
+  }
+
+  section h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+
+  .container {
+      width: 90%;
+      margin: auto;
+      
+  }
+
+  .container > * {
+      padding-bottom: 1em;
+  }
+
+  .container img {
+      width: 80%;
+     
+  }
+
+ .container-stats > img {
+     width: 100%;
+ }
+
+ .stats-flex {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     font-family: 'Open Sans', sans-serif;
+     margin: auto;
+     margin-bottom: 4em;
+ }
+
+ .stats-flex > img {
+     width: 2em;
+ }
+
+ .stats-flex h2 {
+      font-size: 4em;
+ }
+
+ .stats-flex p {
+    color: #999999;
+}
+
+.section-flex {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+#grow-together {
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+
+#grow-together::before {
+    background-image: url(./images/bg-section-top-mobile-1.svg);
+    content: '';
+    display: block;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}
+
+#grow-together::after {
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 100px;
+    bottom: -100px;
+    position: absolute;
+    width: 100%;
+}
+
+#your-users {
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+
+#your-users::before {
+    background-image: url(./images/bg-section-top-mobile-2.svg);
+    content: '';
+    display: block;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}
+
+#your-users::after {
+    background-image: url(./images/bg-section-bottom-mobile-2.svg);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 100px;
+    bottom: -100px;
+    position: absolute;
+    width: 100%;
+}
+
+#get-started h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    position: relative;
+    margin-top: 14em;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer::before {
+    content: '';
+    background-image: url(./images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: -49px;
+}
+
+.footer-flex {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2em;
+}
+
+.footer-flex > * {
+    margin-bottom: 1.2em;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+form {
+    width: 100%;
+}
+form input[type='email'] {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type='submit'] {
+    height: 30px;
+    width: 33%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.2em;
+    float: right;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.7em;
+}
+
+footer ul img {
+    margin-right: 0.5em;
+}
+
+.social {
+    font-size: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 2.6em;
+    }
+    header p {
+        width: 50%;
+    }
+
+    .container-stats {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stats-flex {
+        width: 33%;
+        font-size: 1.5em;
+    }
+
+    .section-flex h3 {
+        margin-top: 6em;
+    }
+
+   
+    #grow-together img, #your-users img {
+        float: right;
+        width: 40%;
+    }
+
+    #flowing-conversations img {
+        float: left;
+        width: 40%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-flex {
+        width: 35%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    section {
+        margin-bottom: 12em;
+    }
+
+    #grow-together::before {
+        background-image: url(./images/bg-section-top-desktop-1.svg);
+        height: 150px;
+        top: -149px;
+    }
+    #grow-together::after {
+        background-image: url(./images/bg-section-bottom-desktop-1.svg);
+        height: 150px;
+        bottom: -149px;
+    }
+    #your-users::before {
+        background-image: url(./images/bg-section-top-desktop-2.svg);
+        height: 150px;
+        top: -149px;
+    }
+    
+    #your-users::after {
+        background-image: url(./images/bg-section-bottom-desktop-2.svg);
+        height: 150px;
+        bottom: -149px;
+    }
+    footer::before {
+        background-image: url(./images/bg-footer-top-desktop.svg);
+        height: 150px;
+        top: -149px;
+    }
+}
